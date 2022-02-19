@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Hashing {
 
-	 static HashMap<Character, Integer> countVariable(String s1){
+	public static HashMap<Character, Integer> countVariable(String s1){
 				HashMap<Character,Integer> map=new HashMap<Character,Integer>();
 				char[] arr=s1.toCharArray();
 				for(int i=0;i<arr.length;i++){
@@ -15,9 +15,9 @@ public class Hashing {
 				        map.put(arr[i],1);
 				    }
 				}
-				/*for (Map.Entry entry : map.entrySet()) {
+				for (Map.Entry entry : map.entrySet()) {
 		            System.out.println(entry.getKey() + " " + entry.getValue());
-		        }*/
+		        }
 				return map;
 			}
         public static void main(String[] args) {
